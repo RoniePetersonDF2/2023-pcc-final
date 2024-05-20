@@ -1,0 +1,121 @@
+DROP DATABASE IF EXISTS sysfood;
+CREATE DATABASE sysfood;
+USE sysfood;
+
+CREATE TABLE usuarios (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(50) NOT NULL,
+  sobrenome VARCHAR(50) NOT NULL,
+  data_nascimento DATE NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  senha VARCHAR(50) NOT NULL,
+  criado_em DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE administradores (
+  id INT NOT NULL AUTO_INCREMENT,
+  usuario_id INT NOT NULL,
+  criado_em DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (id),
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE enderecos (
+  id INT NOT NULL AUTO_INCREMENT,
+  rua VARCHAR(50),
+  bairro VARCHAR(50),
+  cidade VARCHAR(50),
+  estado VARCHAR(50),
+  cep VARCHAR(50),
+  complemento VARCHAR(50),
+  criado_em DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE empresas (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome_empresa VARCHAR(50) NOT NULL,
+  cnpj VARCHAR(50) NOT NULL,
+  email VARCHAR(50) NOT NULL,
+  senha VARCHAR(50) NOT NULL,
+  endereco_id INT NOT NULL,
+  criado_em DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (id),
+  FOREIGN KEY (endereco_id) REFERENCES enderecos(id)
+);
+
+CREATE TABLE funcionarios (
+  id INT NOT NULL AUTO_INCREMENT,
+  cpf VARCHAR(50) NOT NULL,
+  cargo VARCHAR(50) NOT NULL,
+  empresa_id INT NOT NULL,
+  usuario_id INT NOT NULL,
+  endereco_id INT NOT NULL,
+  criado_em DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (id),
+  FOREIGN KEY (empresa_id) REFERENCES empresas(id),
+  FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
+  FOREIGN KEY (endereco_id) REFERENCES enderecos(id)
+);
+
+CREATE TABLE categorias (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome_categoria VARCHAR(50) NOT NULL,
+  empresa_id INT NOT NULL,
+  criado_em DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (id),
+  FOREIGN KEY (empresa_id) REFERENCES empresas(id)
+);
+
+CREATE TABLE produtos (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome_produto VARCHAR(50) NOT NULL,
+  descricao TEXT NOT NULL,
+  valor FLOAT NOT NULL,
+  imagem VARCHAR(255) NOT NULL,
+  categoria_id INT NOT NULL,
+  criado_em DATETIME NOT NULL DEFAULT NOW(),
+  empresa_id INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (categoria_id) REFERENCES categorias(id),
+  FOREIGN KEY (empresa_id) REFERENCES empresas(id)
+);
+
+CREATE TABLE sessoes (
+  id INT NOT NULL AUTO_INCREMENT,
+  nome_sessao VARCHAR(50) NOT NULL,
+  hora_inicio TIME NOT NULL DEFAULT NOW(),
+  hora_fim TIME DEFAULT NOW(),
+  status_sessao VARCHAR(50) NOT NULL,
+  empresa_id INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (empresa_id) REFERENCES empresas(id)
+);
+
+CREATE TABLE pedidos (
+  id INT NOT NULL AUTO_INCREMENT,
+  descricao VARCHAR(50),
+  nome_cliente VARCHAR(50),
+  hora_inicio TIME NOT NULL DEFAULT NOW(),
+  hora_fim TIME,
+  valor_total FLOAT,
+  status_pedido VARCHAR(50) NOT NULL,
+  sessao_id INT NOT NULL,
+  funcionario_id INT,
+  PRIMARY KEY (id),
+  FOREIGN KEY (sessao_id) REFERENCES sessoes(id),
+  FOREIGN KEY (funcionario_id) REFERENCES funcionarios(id)
+);
+
+CREATE TABLE pedido_produtos (
+  id INT NOT NULL AUTO_INCREMENT,
+  quantidade INT NOT NULL,
+  valor_total FLOAT NOT NULL,
+  produto_id INT NOT NULL,
+  pedido_id INT NOT NULL,
+  criado_em DATETIME NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (id),
+  FOREIGN KEY (produto_id) REFERENCES produtos(id),
+  FOREIGN KEY (pedido_id) REFERENCES pedidos(id)
+);

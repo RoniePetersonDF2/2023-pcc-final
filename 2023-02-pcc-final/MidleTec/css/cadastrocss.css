@@ -1,0 +1,143 @@
+.ddd{
+    width: 60px;
+    padding: 0;
+}
+h1 {
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 3px #9ceee0;
+    font-size: 2rem;
+
+
+}
+body {
+    width: 100%;
+    /* background-size: cover; */
+    background-size: cover ;
+    height: 600px;
+
+    background-image: url("../img/bg06.png");
+    background-color: white;
+    color: black;
+    background-repeat: no-repeat;
+ min-height: 600px;
+
+    max-width: 1300px;
+    max-height: 700px;
+}
+fieldset{
+    margin-right: 25%;
+    padding: 1rem;
+    font-size: 0,8rem;
+    /* border-radius: 20px; */
+    /* border: 1rem #9ceee0; */
+    border: none;
+    margin-left: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 3px #9ceee0;
+    font-weight: bold;
+    
+}
+
+
+ form{
+    text-shadow: none;
+    
+}
+fieldset legend{
+    font-size: 1.5rem;
+}
+form select{
+    border: #72cebf solid 2px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: black;
+    height: 30px;
+    gap: 2px;
+    margin: 5px;
+
+
+}
+
+form label{
+    font-size: 1 rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 1rem;
+}
+form input{
+    margin: 5px;
+    border-radius: 30px;
+    border: solid #72cebf 2px;
+    background-color: white;
+    gap: 2px;
+    height: 30px;
+color: black;
+text-align: center;
+padding:0 20px;
+width: 300px;
+}
+form input[type='radio']{
+
+    width: 5%;
+    height: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.input_nome{
+
+    width: 200px;
+}
+form input[type='date']{
+    width: 180px;
+}
+form input[type='time']{
+    width: 150px;
+}
+
+
+form input[type='number']{
+    -moz-appearance: textfield;
+
+
+
+}
+
+form select{
+    width: 350px;
+    padding:0 20px;
+    text-align: center;
+}
+/* form input::placeholder{
+    margin-left: 4px;
+} */
+button {
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    background-position-x: 60px;
+    background-color: #72cebf;
+padding: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ margin-left: 50%;
+ text-shadow: 1px 1px 1px black;
+
+
+}
+button:hover {
+    background-color: #96dcd1;
+    box-shadow: 2px 2px 2px black;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

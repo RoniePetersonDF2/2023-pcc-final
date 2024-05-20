@@ -1,0 +1,26 @@
+administrador:
+     kaio@adm
+     senha: 123
+
+-----------------------------------
+
+Usuário comum:
+     ju.maria@use
+     senha: 123
+     -------------
+     marcela@email
+     senha: 123
+
+-----------------------------------
+
+Usuário sem assinatura(tipo "off"):
+     kelven@email
+     senha: 123
+
+-----------------------------------
+-----------------------------------
+
+Exemplo de "Esqueceu a Senha":
+     Email: maria@ex
+     Tel.: (61)98289-8775
+     CPF: 083.973.628-43

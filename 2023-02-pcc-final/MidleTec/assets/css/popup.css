@@ -1,0 +1,102 @@
+/* Estilização da camada escura por cima da página */
+.overlay {
+    position: fixed; /* posiciona a camada em relação à janela do navegador */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* fundo escuro com opacidade */
+    z-index: 1; /* exibir por cima de outros elementos na página */
+    display: none; /* começa oculto */
+}
+/* Estilização da janela modal */
+.modal {
+    position: absolute; /* posiciona a janela em relação à camada escura */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centraliza a janela na tela */
+    /*background-color:#d36833;*/
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    z-index: 2; /* exibir por cima da camada escura */
+    display: none; /* começa oculto */
+    border-radius: 5px;
+}
+/* Estilização do link */
+/* Estilização da camada escura por cima da página */
+.overlay1 {
+    position: fixed; /* posiciona a camada em relação à janela do navegador */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* fundo escuro com opacidade */
+    z-index: 1; /* exibir por cima de outros elementos na página */
+    display: none; 
+}
+/* Estilização da janela modal */
+.modal1 {
+    position: absolute; /* posiciona a janela em relação à camada escura */
+    top: 50%;
+    left: 50%;
+    transform: translate(-7%, -50%); /* centraliza a janela na tela */
+    /*background-color:#d36833;*/
+    padding: 20px;
+    width: 80%;
+    max-width: 300px;
+    z-index: 2; /* exibir por cima da camada escura */
+    /* display: none; */
+    border-radius: 5px;
+}
+/* Estilização do link */
+
+.div_login{
+    background-color: lightcyan;
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform:translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 15px;
+    color: darkcyan;
+    text-align: center;
+}
+
+.div_login h1{
+    font-weight: 700;
+    font-size: 1.4rem;
+
+}
+
+.div_login button{
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 7px 0;
+    padding: 10px;
+    border: 2px solid #72cebf;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.input{
+    padding: 15px;
+    border: 2px solid #72cebf;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+.button{
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 7px 0;
+    padding: 10px;
+    border: 2px solid #72cebf;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: #96dcd1;
+    box-shadow: 2px 2px 2px black;
+}

@@ -1,0 +1,1367 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,700;1,600&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: #eee;
+    animation-name: FadeIn;
+    animation-duration: .6s;
+    animation-delay: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("../img/0-white-bg-1.jpeg");
+    background-size: cover;
+    overflow-x: hidden;
+
+
+}
+
+
+/*COMEÇO DOBRA CABEÇALHO*/
+
+.main-header {
+    width: 100%;
+    background: #333333;
+    padding: 10px 0;
+    height: 100px;
+
+
+
+}
+
+
+.main-header .main-header-content {
+    display: flex;
+    max-width: 1800px;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.main-header .main-header-content .logo {
+    flex-basis: 25%;
+    border: none !important;
+
+}
+
+.main-header .main-header-content .logo a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: coral;
+    padding: 5px;
+    transition: .5s;
+
+}
+
+.main-header .main-header-content .logo a:hover {
+
+    color: coral;
+    opacity: 0.9;
+    cursor: pointer;
+    border: none !important;
+    border-radius: 10px;
+
+}
+
+
+
+.dropbtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*
+.main-header .main-header-content .main-header-content-ul {
+    display: flex;
+    flex-basis: 29%;
+    padding: 15px 0;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.main-header .main-header-content .main-header-content-ul li {
+    align-items: center;
+    margin: 0 7px;
+    list-style: none
+}
+
+.main-header .main-header-content .main-header-content-ul li a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s
+}
+
+.main-header .main-header-content .main-header-content-ul li a:hover {
+    color: #080808
+}
+
+.main-header .main-header-content-btn {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7px 0;
+    flex-basis: 10%;
+
+}
+
+.main-header .main-header-content-btn button {
+    border: none;
+    margin: 0 10px;
+    padding: 10px 0;
+    width: 130px;
+    background-color: coral;
+    color: #fff;
+    text-decoration: none;
+    background: url("../img/0-white-bg-1.jpeg");
+    border-radius: 4px;
+    display: inline-block;
+    transition: .5s
+}
+
+.main-header .main-header-content-btn button a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 800;
+}
+*/
+
+
+nav.menu {
+    transition: .2s;
+
+}
+
+
+/*nav.menu-lateral:hover{
+    width: 300px;
+
+}*/
+
+/*.btn-expandir {
+    width: 100%;
+    padding-left: 29px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.btn-expandir:hover {
+    background-color: cornflowerblue;
+
+}
+
+.btn-expandir > i {
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}*/
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+
+.menu ul li.item-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 20px;
+    padding: 25px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    letter-spacing: 3px;
+
+
+}
+
+
+.menu ul li.item-menu a:hover {
+    background-color: #333333;
+    color: coral;
+    opacity: 0.5;
+    cursor: pointer;
+    border: none !important;
+    border-radius: 10px;
+}
+
+
+.menu ul li.item-menu a .txt-link {
+    margin-left: 10px;
+    margin-right: 20px;
+
+}
+
+.menu ul li.item-menu a .icon {
+    font-size: 30px;
+    margin-left: 15px;
+
+
+}
+
+
+.nav nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+.nav nav a:hover {
+    background-color: #ddd;
+    color: #000;
+    font-weight: 600;
+}
+
+/*FIM DOBRA CABEÇALHO*/
+
+
+/*COMEÇO DOBRA CAPA*/
+
+.main-cta {
+    width: 100%;
+    background-image: url(../img/blue2.jpg);
+    background-color: #333333;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+
+
+}
+
+
+.main-cta .main-cta-banner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+.main-cta .main-cta-banner .spacer {
+    margin: 0 auto;
+    max-width: 1300px;
+
+}
+
+
+.main-cta .main-cta-banner .main-cta-banner-spacer p {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.main-cta .main-cta-banner .main-cta-banner-spacer label h1 {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.main-cta-banner-busca {
+    padding: 10px;
+    width: 100%;
+}
+
+.main-cta-banner-busca input {
+    padding: 10px;
+    width: 700px;
+    border-radius: 3px;
+    margin-right: 15px;
+
+}
+
+
+.btn-orange a button {
+    border: none;
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(248, 184, 110);
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+.btn-orange button {
+    border: none;
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(248, 184, 110);
+    color: #333333;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+.btn-orange > button:hover {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.9;
+
+
+}
+
+
+.main-cta .main-cta-banner .saiba-mais {
+    outline: 0;
+    cursor: pointer;
+    padding: 9px 25px;
+    border-style: hidden;
+    background-color: rgba(20, 18, 17, 0.91);
+    font-size: 20px;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.main-cta .main-cta-banner .saiba-mais:hover {
+    background: #333333;
+    opacity: 0.8;
+}
+
+
+.seta i {
+    margin-top: 50px;
+    font-size: 30px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    animation-name: SobeDesce;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both
+}
+
+.seta a {
+    color: #fff
+}
+
+/*FIM DOBRA CAPA*/
+
+
+/*COMEÇO DOBRA BLOG*/
+
+.main-blog {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.main-blog .main-blog-header {
+    width: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+
+}
+
+.main-blog .main-blog-header h2 {
+    color: #000000;
+    margin: 0 5px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+
+.main-blog .main-blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+
+}
+
+.main-blog .main-blog-content1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+
+}
+
+
+.main-blog .main-blog-content article {
+    flex-basis: calc(33% - 30px);
+    /*flex-basis: 100%;*/
+    margin-bottom: 60px;
+    border: none #e2dddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 12px 12px 2px 1px rgba(255, 132, 0, 0.2);
+    padding: 30px;
+
+
+}
+.main-blog .main-blog-content1 article {
+    /*flex-basis: calc(33% - 30px);*/
+    flex-basis: 100%;
+    margin-bottom: 60px;
+    border: none #e2dddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 12px 12px 2px 1px rgba(255, 132, 0, 0.2);
+    padding: 30px;
+
+
+}
+
+.main-blog .main-blog-content article h3 {
+    margin: auto;
+}
+.main-blog .main-blog-content1 article h3 {
+    margin: auto;
+}
+
+.main-blog .main-blog-content article .icon {
+    padding: 15px;
+    margin: 0 auto;
+}
+.main-blog .main-blog-content1 article .icon {
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
+.w50 {
+    width: 50%;
+    float: left;
+    padding: 0 10px
+}
+
+.w25 {
+    width: 25%;
+    float: left
+}
+
+.w100 {
+    padding: 0 10px;
+    width: 100%;
+    float: left
+}
+
+a {
+    text-decoration: none
+}
+
+
+@keyframes FadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+@keyframes SobeDesce {
+
+    0%,
+    100% {
+        top: 10px
+    }
+
+    50% {
+        top: 25px
+    }
+}
+
+/*FIM DOBRA BLOG*/
+
+
+/*COMEÇO DOBRA ASSINATURA*/
+
+.main-assinatura {
+    max-width: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-assinatura-header {
+    background-color: #333333;
+    text-align: center;
+
+}
+.main-assinatura-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 35px 0;
+
+}
+.main-assinatura-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: cornflowerblue;
+    padding: 35px 0;
+
+}
+
+.main-assinatura-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.main-assinatura-content img {
+    align-self: center;
+
+}
+
+
+.main-assinatura-header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    padding: 20px 5px;
+
+
+}
+
+
+.assinatura-boxes {
+    max-width: 600px;
+    margin: 50px 0;
+
+
+}
+
+
+.box-single-content {
+    margin: 0 50px;
+}
+
+
+.div-border {
+    background: #fff;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, .2);
+    border: 1px solid darkgoldenrod;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+
+
+}
+
+.div-border:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+
+}
+
+.div-border .box-single-content {
+    max-width: 300px;
+}
+
+.box-single-content h1 {
+    font-weight: 400;
+    padding: 10px 0;
+    font-size: 2.5rem;
+
+}
+
+.box-single-content h2 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding: 10px 0;
+    font-size: 2.5rem;
+
+}
+
+.box-single-content a {
+    color: cornflowerblue;
+    text-decoration: none;
+
+}
+
+.box-single-content p {
+    font-weight: 900;
+    padding-bottom: 10px;
+    line-height: 20px;
+    color: #666;
+}
+
+/*FIM DOBRA ASSINATURA*/
+
+
+/*COMEÇO DOBRA CURSOS*/
+
+
+.main-cursos {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+
+}
+
+.main-cursos-content {
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.main-cursos-content h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: -1px;
+    color: #201f1f;
+    padding: 35px 0;
+
+}
+
+.box-cursos {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box-single-cursos-img {
+    width: 100%
+}
+
+.box-single-cursos-img img {
+    width: 100%
+}
+
+.box-cursos-content {
+    border-bottom: 1px solid #c2c2c2;
+    display: flex;
+}
+
+.box-cursos-content h2 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-style: italic;
+    letter-spacing: -1px;
+    color: #201f1f;
+}
+
+.box-cursos-content p {
+    font-weight: lighter;
+    margin: 15px 0;
+    color: #666
+}
+
+.box-cursos-content p a {
+    color: #000000;
+    font-size: 18px;
+    text-align: right;
+    display: block;
+    margin-right: 20px;
+    transition-duration: .5s
+}
+
+.box-cursos-content p a:hover i {
+    position: relative;
+    left: 8px;
+    color: #000000
+}
+
+.box-cursos-content p a:hover {
+    color: #000000
+}
+
+.box-cursos-content p a i {
+    margin: 0 5px
+}
+
+
+.box-cursos-content-flex {
+    display: flex;
+    width: 100%;
+
+
+}
+
+.box-cursos-content-links {
+    margin-right: 50px;
+    flex-basis: 100%;
+
+}
+
+.box-cursos-content-imagem {
+    border: none;
+}
+
+/*FIM DOBRA CURSOS*/
+
+
+/*COMEÇO DOBRA NOTICIAS*/
+
+
+.main-noticias {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+
+}
+.main-noticias header {
+    text-align: center;
+    background-color: #333333;
+
+}
+.main-noticias header h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-style: italic;
+    letter-spacing: -1px;
+    padding: 35px 0;
+
+}
+
+.main-noticias-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-noticias-content h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: -1px;
+    color: #201f1f;
+    padding: 35px 0;
+
+}
+.box-noticias{
+    width: 100%;
+
+}
+
+.box-noticias-content {
+
+
+
+}
+
+/*.box-single-noticias {
+    width: 100%;
+    margin-top: 30px
+}
+
+.box-single-noticias-content h2 {
+    font-size: 2.5rem
+}*/
+
+
+
+/*FIM DOBRA NOTICIAS*/
+
+/*COMEÇO DOBRA EQUIPE*/
+
+.main-team {
+    width: 100%;
+
+}
+
+.main-team-header {
+    text-align: center;
+    background-color: #333333;
+
+}
+
+.main-team .main-team-header h2 {
+
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-style: italic;
+    letter-spacing: -1px;
+    padding: 35px 0;
+
+
+}
+
+
+div.main-team-box {
+    padding: 5px
+}
+
+.box-single-team {
+    padding: 10px
+}
+
+.main-team-box .box-single-team .box-single-team-img {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto
+}
+
+.main-team-box .box-single-team .box-single-team-img img {
+    border-radius: 100%;
+    width: 100%
+}
+
+.main-team-box .box-single-team .box-single-team-content {
+    text-align: center;
+    margin: 10px 0
+}
+
+.main-team-box .box-single-team .box-single-team-content h1 {
+    padding: 9px 0;
+    font-weight: 400;
+    font-size: 30px;
+    color: #333333;
+}
+
+.main-team-box .box-single-team .box-single-team-content h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333333;}
+
+.main-team-box .box-single-team .box-single-team-content p {
+    padding-bottom: 10px;
+    line-height: 20px;
+    width: 90%;
+    margin: 0 auto;
+    color: #333333;}
+
+.box-single-medias {
+    margin-top: 20px
+}
+
+.box-single-medias i {
+    margin-right: 4px;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    padding: 10px;
+    border: 1px solid transparent;
+    color: #333333;}
+
+.box-single-medias i:hover {
+    border-radius: 100%;
+    border: 1px solid #000000;
+    color: #000000;
+    cursor: pointer
+}
+
+.line {
+    background-color: #000;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 3px;
+    z-index: -1;
+    width: 100%;
+    padding: 0 5%
+}
+
+
+/*FIM DOBRA EQUIPE*/
+
+
+/*COMEÇO DOBRA ICONES*/
+
+.box-icones {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box-icones .box-single-icones {
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center
+}
+
+
+.box-icones .box-single-icones i {
+    color: #000000;
+    margin-bottom: 10px
+}
+
+.box-icones .box-single-icones p {
+    font-weight: lighter;
+    padding: 5px 0;
+    color: #666
+}
+
+.grupo-icones {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+
+/* FIM DOBRA ICONES*/
+
+
+/* COMEÇO DOBRA CONTATO */
+
+.contacto {
+    margin-bottom: 40px
+}
+
+.contacto-container .w50 input {
+    width: 100%;
+    padding-left: 8px;
+    height: 40px;
+    outline: 0;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    margin-top: 10px
+}
+
+.contacto-container .w100 textarea {
+    margin-top: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: 0;
+    padding: 10px;
+    font-size: 17px;
+    margin-bottom: 5px
+}
+
+.contacto-container .w100 input[type=submit] {
+    width: 100%;
+    margin: 10px 0;
+    background-color: #000000;
+    border: none;
+    height: 35px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    outline: 0
+}
+
+.titulo-contacto {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+::selection {
+    color: #fff;
+    background-color: #000000
+}
+
+.titulo-contacto h1 {
+    background-color: #eee;
+    display: inline-block;
+    padding: 0 15px
+}
+
+/* FIM DOBRA CONTATO*/
+
+/*OPT-IN*/
+.opt-on {
+    background-color: #333333;
+    visibility: collapse;
+    color: #fff;
+    width: 100%;
+}
+
+.opt-on-content {
+    max-width: calc(1300px - 40px);
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.main_optin {
+    width: 100%;
+    background-color: #333333;
+}
+
+.main_optin_content {
+    max-width: 1300px;
+    padding: 40px 0;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.main_optin_content header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.main_optin_content .btnn {
+    color: #fff;
+    background-color: #87b1fd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.main_optin_content .btnn:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+/*OPTIN EMPRESA*/
+
+.main_optin_empresa {
+    width: 100%;
+}
+
+.main_optin_content_empresa {
+    max-width: 1300px;
+    padding: 40px 0;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.main_optin_content_empresa header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.main_optin_content_empresa .btnn {
+    color: #fff;
+    background-color: #87b1fd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.main_optin_content_empresa .btnn:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+/*FIM OPT-IN EMPRESA*/
+
+
+/*OPT-IN*/
+.opt-in {
+    background-color: #333333;
+    visibility: collapse;
+    color: #fff;
+    width: 100%;
+}
+
+.opt-in-content {
+    max-width: calc(1300px - 40px);
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.main_optin_footer {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.main_optin_footer_content {
+    max-width: 1300px;
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+    margin: 0 auto;
+}
+
+.main_optin_footer_content header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.main_optin_footer_content .btnn {
+    color: #fff;
+    background-color: #87b1fd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+.main_optin_footer_content .btnn:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+/*FIM OPT-IN*/
+
+/* INICIO DOBRA RODAPÉ */
+
+.main_footer {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333333;
+    color: #f1f1f1;
+
+}
+
+
+
+.main_footer article h2 {
+    margin-bottom: 20px;
+}
+
+.main_footer article ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.main_footer article ul li a {
+    color: #f1f1f1;
+}
+
+.main_footer article ul li a:hover {
+    text-decoration: underline;
+}
+
+.main_footer_our_pages,
+.main_footer_links {
+    flex-basis: 25%;
+
+}
+
+.main_footer_about {
+    flex-basis: 50%;
+}
+
+.main_footer_rights {
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 300;
+    border-top: 1px solid #ebebeb;
+}
+
+/* FIM DOBRA RODAPÉ */
+
+.menu-desktop {
+    display: none
+}
+
+.banner {
+    text-align: center
+}
+
+
+@media (max-width: 1005px) {
+    .banner h1 {
+        font-size: 4rem
+    }
+}
+
+@media (max-width: 840px) {
+    .banner h1 {
+        font-size: 3rem
+    }
+}
+
+@media (max-width: 690px) {
+
+    .banner h1,
+    .titulo-projectos h1 {
+        font-size: 2rem
+    }
+}
+
+@media (max-width: 540px) {
+    .btn-gordo {
+        margin-top: 20px
+    }
+
+    .titulo-contacto {
+        font-size: 30px
+    }
+
+    div.titulo-projectos h1 {
+        font-size: 3rem
+    }
+}
+
+@media (max-width: 420px) {
+    .titulo-contacto {
+        font-size: 27px
+    }
+}
+
+@media (max-width: 330px) {
+    .medias-footer2 {
+        margin-top: 10px
+    }
+}
+
+
+@media (max-width: 768px) {
+    .fixed {
+        padding-left: 20px;
+        position: fixed;
+        top: 0;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        z-index: 1030
+    }
+}
+
+.show-scroll {
+    bottom: 5rem
+}
+
+.scrollup {
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    right: 1.9rem;
+    bottom: 5%;
+    transition: 1s
+}
+
+.scrollup:hover {
+    background-color: #000000;
+    color: #fff
+}
+
+.scrollup__icon {
+    color: #000;
+    font-size: 24px;
+    transition: 4s
+}
+
+
+.avaliacao-content{
+    border: 1px grey solid;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 25px;
+}
+
+
+/*
+.menu-mobile {
+    display: none;
+    float: right;
+    padding: 20px
+}
+
+
+
+.menu-mobile h2 {
+    cursor: pointer;
+    font-size: 32px;
+    z-index: 9999
+}
+
+.menu-mobile ul {
+    display: none;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    z-index: 999;
+    text-align: center
+}
+
+.menu-mobile li {
+    padding: 8px 0;
+    border-bottom: 1px solid #000
+}
+
+.menu-mobile a {
+    display: block;
+    color: #000;
+    text-decoration: none
+}
+*/

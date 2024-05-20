@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="assests/css/boot.css" rel="stylesheet"> <!--boot.css-->
+    <link href="assests/css/style.css" rel="stylesheet"> <!--style.css-->
+    <link rel="stylesheet" href="assests/css/index_style.css">
+    <link rel="shortcut icon" href="img/icons8-marcador-50.png">
+    <script src="index.js" defer></script>
+    <title>FITNOW</title>
+</head>
+<!--Cabeçalho-->
+<header class="main_header">
+    <div class="main_header_content">
+        <a href="home.html" class="logo">
+            <img id="fitlogo_header" src="img/logofit.png" alt="FITNOW - A qualquer hora e qualquer lugar"
+                title="FITNOW - A qualquer hora e qualquer lugar"></a>
+
+        <nav class="main_header_content_menu">
+            <ul>
+                <li><a href="#ancora">Cliente</a></li>
+                <li><a href="#ancora2">Cliente Plus</a></li>
+                <li><a href="#ancora3">Parceiro</a></li>
+                <li><a href="login/index.php">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--Fim Cabeçalho-->
+<body>
+    <!--1ª Dobra-->
+    <div class="main_cta">
+        <article class="main_cta_content">
+            <div class="main_cta_content_spacer">
+                <header>
+                    <h1>Aqui você encontra a academia<br>
+                        mais próxima de você
+                    </h1>
+                </header>
+                <p>Treine em qualquer lugar e hora</p>
+                <p><a href="./login/index.php" class="btn">Procurar</a></p>
+            </div>
+        </article>
+    </div>
+    <!--Fim 1ª Dobra-->
+    <!--Video Apresentação-->
+    <div class="video">
+        <h1>Saiba Mais</h1>
+        <video width="50%" height="auto" autoplay muted loop controls>
+            <source src="videos/VIDEO.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!--2ª Dobra-->
+    <div class="db2">
+        <h1>Várias Modalidades</h1>
+        <p>Treinos dinâmicos para todos os perfis</p>
+        <br>
+        <!--1º Carrossel-->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 8</div>
+              <img src="img/boxing.jpg" style="width:100%">
+              <!-- <div class="text">Boxing</div> -->
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 8</div>
+              <img src="img/musculacao.jpg" style="width:100%">
+              <!-- <div class="text">Musculação</div> -->
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 8</div>
+              <img src="img/pilates.jpg" style="width:100%">
+              <!-- <div class="text">Pilates</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <img src="img/natacao.jpg" style="width:100%">
+                <!-- <div class="text">Natação</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <img src="img/jiu.jpg" style="width:100%">
+                <!-- <div class="text">Jiu Jitsu</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 8</div>
+                <img src="img/funcional.jpg" style="width:100%">
+                <!-- <div class="text">Funcional</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <img src="img/yogas.jpg" style="width:100%">
+                <!-- <div class="text">Yoga</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <img src="img/crossfit.png" style="width:100%">
+                <!-- <div class="text">Crossfit</div> -->
+            </div>
+          
+            <!-- Botões de antes e depois-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+        <!--Fim 1º Carrossel-->
+    </div>
+    <div>
+        <a href="./usuarios/new_user.php">
+            <p id="pbtn"><button id="btn2">Cadastre-se</button></p>
+        </a>  
+    </div>
+    <!--Fim 2ª Dobra-->
+    <!--3ª Dobra-->
+    <section class="db3">
+        <div class="db3_box">
+            <h1 id="ancora2">FITNOW</h1>
+            <p>Você tem <span class="focus">liberdade</span><br>
+                para escolher o lugar mais prático para seu treino de qualidade</p>
+            <div>
+                <article>
+                    <img src="img/weightlifter.png" alt="">
+                    <h2>Academias Reconhecidas</h2>
+                    <p>Todos os nossos parceiros têm <span class="focus" >excelente reputação</span> dentre seus clientes</p>
+                </article>
+                <article>
+                    <img src="img/muscle.png" alt="">
+                    <h2>Treino Especializado</h2>
+                    <p>Conheça novas modalidades de exercícios nos <span class="focus">locais mais variados</span></p>
+                </article>
+                <article>
+                    <img src="img/map.png" alt="">
+                    <h2>Mais de <span class="focus">100 parceiros</span> divididas em 35 regiões</h2>
+                    <p>Parceiros em todos os lugares para melhor te atender em qualquer momento</p>
+                </article>
+                <article>
+                    <img src="img/clienteplus.png" alt="">
+                    <h2>Promoções aos <span class="focus">Clientes Plus</span></h2>
+                    <p>Seja Plus e tenha preços únicos para alcançar seus objetivos</p>
+                </article>
+            </div>
+            <div>
+                <p>
+                    <a href="./usuarios/new_user.php"><button id="btn3">Seja Plus</button></a>
+                </p>
+                <p id="pbtn2"></p>
+            </div>
+        </div>
+    </section>
+    <!--Fim 3ª Dobra-->
+    <!--Sessão de Opiniões-->
+    <section class="main_course_ratting_content_comment">
+        <header>
+            <h2>Veja o que estão falando sobre o FITNOW</h2>
+        </header>
+        <article>
+            <header>
+                <h3>Dark Gym</h3>
+                <p>03/03/2023</p>
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+            </header>
+            <p>"Depois que nos tornamos parceiros, nossa academia está bombando!"</p>
+        </article>
+
+        <article>
+            <header>
+                <h3>John Lennon</h3>
+                <p>03/03/2023</p>
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+            </header>
+            <p>"Com a pandemia me tornei totalmente sedentário, agora treino em qualquer lugar."</p>
+        </article>
+
+        <article>
+            <header>
+                <h3>CORPO e MENTE</h3>
+                <p>03/03/2023</p>
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+            </header>
+            <p>"Incrível como a plataforma é capaz de abrir
+                nossas portas para todos os públicos."</p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Iggy Pop</h3>
+                <p>03/03/2023</p>
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+            </header>
+            <p>"Posso viajar sem me preocupar com meus treinos,
+                onde vou tenho o FITNOW."</p>
+        </article>
+
+        <article>
+            <header>
+                <h3>ARENA FIT</h3>
+                <p>03/03/2023</p>
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+            </header>
+            <p>"Posso dizer que sem o FITNOW teríamos falido,
+                agora temos alunos novos a cada dia."</p>
+        </article>
+
+        <article>
+            <header>
+                <span><h3>Fidel Castro</h3></span>
+                <p>03/03/2023</p>
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <span id="egg"><a href="https://www.youtube.com/watch?v=U06jlgpMtQs"><img src="img/icons8-star-48.png" alt="Imagem" title="Imagem"></a></span>
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+                <img src="img/icons8-star-48.png" alt="Imagem" title="Imagem">
+            </header>
+            <p>"Para alguem como eu que trabalha viajando,
+                sem dúvida me ajuda diariamente manter a disciplina."</p>
+        </article>
+    </section>
+</div>
+</div>
+<!--Fim Sessão de Opiniões-->
+</section>
+    <!--Parceiros-->
+    <section class="parceiros" id="ancora3">
+        <h2>Venha fazer parte dessa Rede</h2>
+        <img src="img/parceiro.png" alt="">
+        <br>
+        <a href="./usuarios/new_user.php"><button id="parceirobtn">Seja Parceiro</button></a>
+    </section>
+    <!--Fim Parceiros-->
+    <!--4ª Dobra-->
+    <section class="db4" id="ancora">
+        <img src="img/logofit.png" alt="">
+        <h1>A Qualquer Hora e Lugar</h1>
+        <h2>Tudo o que você precisa para treinar com praticidade</h2>
+        <img id="db4icon1" src="img/weightlifting.png" alt="">
+        <p>Desde 2023 o FITNOW - vem aproximando as melhores academias do mercado, entregamos ao cliente
+            opções múltiplas e de qualidade. Você tem acesso a academias, centros de treinamentos com os
+            melhores equipamentos que
+            impulsionam seus excercícios e sua saúde.
+        </p>
+        <img id="db4icon2" src="img/treadmill.png" alt="">
+        <p id="db4p2">Que tal treinar com ajuda da plataforma com o certificado da aplicação eleita a melhor do
+            Brasil com reconhecimento
+            em mais de 17 países pela Latin American Quality Institute?
+        </p>
+        <a href="usuarios/new_user.php">
+            <p id="pbtn"><button id="btn2">Cadastre-se</button></p>
+        </a> 
+    </section>
+    <!--Fim 4ª Dobra-->
+</body>
+<!--Rodapé-->
+<footer>
+    <section class="flex-container">
+        <div>
+            <h1>Quer saber mais?</h1>
+            <div>
+                <h2>Nossas Páginas</h2>
+                <ul>
+                    <li><a href="#">Cliente</a></li>
+                    <li><a href="#">Cliente Plus</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>   
+        <div>
+            <h2>Links Úteis</h2>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Aviso Legal</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+        </div>
+    </section>
+    <div id="last">
+        <p>FITNOW © - Todos os direitos reservados</p>
+    </div>
+</footer>
+</html>

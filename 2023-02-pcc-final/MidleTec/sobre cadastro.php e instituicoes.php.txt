@@ -1,0 +1,2 @@
+A instituição cadastradas no banco de dados atravez da pagina "instituicoes.php" 
+será inserida automaticamente no menu instituição na pagina de cadastro do aluno (cadastro.php).

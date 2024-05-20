@@ -1,0 +1,854 @@
+/*TOPO*/
+.header_menu {
+    width: 100%;
+    background-color: #fff;
+    background-attachment: fixed;
+}
+
+.header_menu .div_menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu .div_menu .nav_menu {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.header_menu .div_menu .nav_menu h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: darkcyan;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo_img {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-start;
+}
+
+.header_menu .div_menu .logo {
+    flex-basis: auto;
+    padding: 0 25px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu .div_menu .nav_menu ul {
+    display: flex;
+    align-items: stretch;
+}
+
+.header_menu .div_menu .nav_menu ul li {
+    list-style: none;
+    align-items: stretch;
+    display: flex;
+}
+
+.header_menu .div_menu .nav_menu ul li a {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: darkcyan;
+}
+
+.header_menu .div_menu .nav_menu ul li a:hover {
+    color: black;
+    background-color: darkcyan;
+    opacity: 0.5;
+}
+
+/* menu dropout do usuario (perfil-sair) */
+
+.link {
+    display: flex;
+    height: 100%;
+    align-self: center;
+    align-items: center;
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+    color: darkcyan;
+    text-align: center;
+}
+
+.link:hover {
+    color: black;
+    background-color: darkcyan;
+    opacity: 0.5;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown_menu {
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: 6px;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 0.35rem);
+    background-color: white;
+    /* padding: 0.25rem; */
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    color: darkcyan;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out transform 150ms ease-in-out;
+
+    height: 136%;
+    /* caso seja inseridos mais opções no menu do usuario o campo height acima pode ser alterado para um tamanho acima de 100% ex(120%, 150%, 200%) */
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown_menu a:hover {
+    background-color: darkcyan;
+    color: black;
+    opacity: 0.5;
+}
+
+.dropdown_menu a {
+    padding: center;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    height: 35px;
+    display: flex;
+    color: darkcyan;
+    /* position: relative; */
+}
+
+.dropdown.active>.link .link:hover {
+    color: black;
+}
+
+.dropdown.active>.link+.dropdown_menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.fotoPerfil {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    pointer-events: none;
+}
+
+.fotoPerfil img {
+    width: 50px;
+    border-radius: 50%;
+    /* height: 50px fit-content; */
+}
+
+/*FIM TOPO*/
+
+/*CAPA*/
+.formato_capa {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.capa {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+}
+
+.box {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-basis: 180%;
+    margin-bottom: 50px;
+}
+
+.box_content {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formato_capa .capa .box2 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3em;
+    color: darkcyan;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.formato_capa .capa .box2 p {
+    font-size: 1.700em;
+    color: #0f2423;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.formato_capa .capa .box2 p .btn {
+    background-color: darkcyan;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.formato_capa .capa .box2 p .btn:hover {
+    color: black;
+    background-color: darkcyan;
+    opacity: 0.9;
+}
+
+.capa .box2 p .btn {
+    background-color: darkcyan;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.capa .box2 p .btn:hover {
+    color: black;
+    background-color: darkcyan;
+    opacity: 0.9;
+}
+
+/*FIM CAPA*/
+
+/*COMEÇO BLOG*/
+.blog {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+    height: 1500px;
+}
+
+/*FIM BLOG*/
+
+/*INICIO SESSÃO ARTIGOS*/
+.main_blog {
+    max-width: calc(1300px - 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main_blog_header {
+    flex-basis: 100%;
+    margin: 30px 0;
+}
+
+.main_blog_header h1 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+}
+
+.main_blog article {
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+.main_blog article:hover {
+    opacity: 1;
+}
+
+.main_blog article p {
+    margin: 10px 0;
+}
+
+.main_blog article img {
+    width: 100%;
+}
+
+.category {
+    margin: 10px 0;
+    font-size: 1.250em;
+    color: darkcyan;
+}
+
+.main_blog article h2 {
+    font-weight: 300;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.main_blog article h2 a {
+    color: #333;
+}
+
+/*FIM SESSÃO ARTIGOS*/
+
+/*INCICIO DOBRA CURSOS*/
+.main_course {
+    width: 100%;
+}
+
+.main_course_header {
+    max-width: 780px;
+    margin-top: 70px;
+    margin: 70px auto;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    /* position: relative; */
+}
+
+.main_course_header img {
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.main_course_header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.main_course_content {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.main_course_content article {
+    flex-basis: 48%;
+    margin: 20px 0;
+    background-color: #9ceee0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+}
+
+.main_course_content article h2 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.main_course_content article p {
+    font-size: 0.9em;
+    color: #333;
+}
+
+/*FIM DOBRA CURSOS*/
+
+
+/*INICIO DOBRA REVIEWS*/
+.main_course_fullwidth {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.main_course_ratting_content {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.main_course_ratting_content p .btn {
+    background-color: darkcyan;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.main_course_ratting_content p .btn:hover {
+    color: black;
+    background-color: darkcyan;
+    opacity: 0.9;
+}
+
+.main_course_ratting_content p .btn2 {
+    background-color: darkcyan;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: relative;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.main_course_ratting_content p .btn2:hover {
+    color: black;
+    background-color: darkcyan;
+    opacity: 0.9;
+}
+
+.main_course_rating_title {
+    color: #0f2423;
+    text-align: center;
+}
+
+.main_course_rating_title h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+.main_course_rating_title h3 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+.main_course_ratting_content_comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_course_ratting_content_comment h2 {
+    color: #0f2423;
+}
+
+.main_course_ratting_content_comment>header {
+    flex-basis: 100%;
+    color: #0f2423;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.main_course_ratting_content_comment>article {
+    flex-basis: 45%;
+    margin: 20px 15px;
+    background-color: #96dcd1;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+    color: #0f2423;
+}
+
+.main_course_ratting_content_comment>article h3 {
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.main_course_ratting_content_comment>article img {
+    width: 15px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.main_course_rating_title img {
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+/*FIM DOBRA REVIEWS*/
+
+
+/*INICIO DOBRA A ESCOLA*/
+.main_school {
+    width: 100%;
+}
+
+.main_school p .btn {
+    background-color: darkcyan;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.main_school p .btn:hover {
+    color: black;
+    background-color: darkcyan;
+    opacity: 0.9;
+}
+
+.main_school_content {
+    max-width: 1300px;
+    margin: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_school_header {
+    flex-basis: 100%;
+    padding: 40px 0;
+    color: darkcyan;
+    flex-basis: calc(70% - 20px);
+
+}
+
+.main_school_header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.main_school_content_left_content>header>p {
+    padding: 10px 10px;
+    background-color: darkcyan;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main_school_content_left_content>header>p span {
+    margin-left: 20px;
+}
+
+.main_school_content_left_content>header>p a {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.main_school_content_left_social_network a:hover {
+    text-decoration: underline;
+}
+
+.main_school_content_left_content>header>h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.main_school_content_left_content>p {
+    margin-bottom: 20px;
+}
+
+.main_school_content_right {
+    flex-basis: 30%;
+}
+
+.main_school_content_right img {
+    width: 65%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.main_school_list {
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_school_list>header {
+    flex-basis: 100%;
+    color: darkcyan;
+    margin-bottom: 20px;
+}
+
+.main_school_list>article {
+    flex-basis: calc(50% - 10px);
+    margin: 4px 0;
+}
+
+.main_school_list>article h3 {
+    font-weight: 300;
+}
+
+.main_school_adress {
+    flex-basis: 100%;
+    padding: 55px 0;
+    text-align: center;
+}
+
+.main_school_adress h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+/*FIM DOBRA A ESCOLA*/
+
+/* INICIO DOBRA TUTOR */
+.main_tutor {
+    width: 100%;
+}
+
+.main_tutor_content {
+    background-color: darkcyan;
+    max-width: calc(1300px  - 80px);
+    padding: 40px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.main_tutor_content>header h1 {
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+.main_tutor_content>header p {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+.main_tutor_content_img {
+    margin: 20px auto;
+}
+
+.main_tutor_content_img img {
+    max-width: 200px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #fff;
+}
+
+.main_tutor_content_history h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+}
+
+.main_tutor_content_history p {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+
+}
+
+.main_tutor_social_network {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #72cebf;
+    border-radius: 5px;
+    padding: 20px;
+
+
+}
+
+.main_tutor_social_network>header {
+    flex-basis: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.main_tutor_social_network>header h2 {
+    color: #0f2423;
+}
+
+.main_tutor_social_network>article {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.main_tutor_social_network>article h3 {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.main_tutor_social_network>article h3 a {
+    background-color: #fff;
+    color: darkcyan;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.main_tutor_social_network>article h3 a:hover {
+    background-color: #2d3142;
+    color: #fff;
+}
+
+/* FIM DOBRA TUTOR */
+
+
+.main_optin_footer {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.main_optin_footer_content {
+    max-width: 1300px;
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+    margin: 0 auto;
+}
+
+.main_optin_footer_content header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+.main_optin_footer_content .btn {
+    color: #fff;
+    background-color: darkcyan;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.main_optin_footer_content .btn:hover {
+    color: #0f2423;
+    background-color: darkcyan;
+    opacity: 0.9;
+}
+
+.main_footer {
+    max-width: 1300px;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px;
+    color: #333;
+}
+
+.main_footer header {
+    flex-basis: 100%;
+}
+
+.main_footer header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+
+}
+
+.main_footer article h2 {
+    margin-bottom: 20px;
+}
+
+.main_footer article ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.main_footer article ul li a {
+    color: #333;
+}
+
+.main_footer article ul li a:hover {
+    text-decoration: underline;
+}
+
+.main_footer_our_pages,
+.main_footer_links {
+    flex-basis: 25%;
+
+}
+
+.main_footer_about {
+    flex-basis: 50%;
+}
+
+.main_footer_rights {
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 300;
+    border-top: 1px solid #ebebeb;
+}
+
+/* FIM DOBRA RODAPÉ */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    /* height: fit-content; */
+    /* background-size: cover; */
+    background-size: cover;
+    background-image: url("../img/bg06.png");
+    color: black;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+/*BARRA DE PESQUISA*/
+.topnav {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 7px;
+    border: darkcyan solid 2px;
+    margin-top: 25px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.aa {
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.infouser {
+    display: flex;
+}
+
+.infouser img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

@@ -1,0 +1,21 @@
+body{
+
+}
+
+.box_container{
+    background-image: url(../../img/cardio_people.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 160px;
+    margin-bottom: -25px;
+}
+
+.alterar h1{
+    font-size: 30px;
+}
+
+.alterar{
+    font-size: 22px;
+}

@@ -1,0 +1,26 @@
+.header_menu{
+    width: 100%;
+    /* background-color: #fff; */
+    /* box-shadow: 5px 5px 5px 5px #72cebf; */
+    /* border-radius: 0 0 0 30px; */
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.header_menu .div_menu{
+    display: flex;
+    margin: 0 auto;
+}
+
+.header_menu .div_menu .logo{
+    flex-basis: auto;
+    padding: auto;
+    margin: 10px 20px;
+}
+
+.logo_img{
+    flex-basis: 330px;
+    padding: 20px;
+    width: 290px;
+    /* CONFIGURAR PADDING APOS A CRIACAO DA LOGO(TOP LEFT RIGHT BOTTOM) */
+}
